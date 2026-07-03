@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlirtScore – Privacy Policy</title>
+  <meta name="description" content="FlirtScore Privacy Policy — what we process and why." />
+  <style>
+    :root {
+      --bg: #0d0913;
+      --card: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #f4eef8;
+      --muted: #b3a7c2;
+      --pink: #ff4f8b;
+      --purple: #a15cff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, rgba(161, 92, 255, 0.22), transparent 60%), var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 48px 20px 80px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; }
+    .logo {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 66px; height: 66px; border-radius: 20px;
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      font-size: 32px; margin-bottom: 16px;
+      box-shadow: 0 12px 40px rgba(255, 79, 139, 0.35);
+    }
+    h1 {
+      font-size: 28px; font-weight: 800; letter-spacing: -0.02em;
+      background: linear-gradient(90deg, #fff, #e7d6ff);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .updated { color: var(--muted); margin-top: 8px; font-size: 14px; }
+    .content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 30px 28px;
+      backdrop-filter: blur(12px);
+    }
+    h2 { font-size: 19px; font-weight: 700; margin: 26px 0 10px; }
+    h2:first-child { margin-top: 0; }
+    p { color: var(--muted); margin-bottom: 12px; }
+    ul { list-style: none; margin: 0 0 12px; }
+    li { padding: 6px 0 6px 24px; position: relative; color: var(--muted); }
+    li::before {
+      content: ""; position: absolute; left: 2px; top: 14px;
+      width: 7px; height: 7px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+    }
+    strong { color: var(--text); }
+    a { color: var(--pink); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 34px; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">🔒</div>
+      <h1>FlirtScore Privacy Policy</h1>
+      <p class="updated">Last updated: 3 July 2026</p>
+    </header>
+
+    <div class="content">
+      <p>
+        FlirtScore ("the app", "we", "us") analyzes WhatsApp conversations you choose to
+        import and produces an AI relationship report. This policy explains what we process
+        and why.
+      </p>
+
+      <h2>Summary</h2>
+      <ul>
+        <li>We do <strong>not</strong> require an account, your name, email, or phone number.</li>
+        <li>We do <strong>not</strong> sell your data or use it for advertising.</li>
+        <li>Chat content is processed to generate your report and is not used to identify you.</li>
+      </ul>
+
+      <h2>What we process</h2>
+      <p>
+        <strong>Chat content you import.</strong> When you run an analysis, your chat is
+        parsed on your device. A condensed sample of messages plus aggregate statistics is
+        sent to our secure backend and to our AI provider (Google Gemini) solely to generate
+        your report. The resulting report is stored in your account record so it can power the
+        app's features.
+      </p>
+      <p>
+        <strong>Anonymous identifier.</strong> We use Firebase Anonymous Authentication to
+        create a random identifier so your reports can be associated with your device. This
+        identifier is not linked to your real-world identity.
+      </p>
+      <p>
+        <strong>Diagnostics &amp; usage.</strong> We use Firebase Analytics and Crashlytics to
+        collect aggregate, non-identifying usage and crash data to improve reliability.
+      </p>
+      <p>
+        <strong>Purchases.</strong> Subscriptions are processed by Apple and managed via
+        RevenueCat. We receive purchase status (active plan, entitlement), not your payment
+        details.
+      </p>
+
+      <h2>Third-party processors</h2>
+      <ul>
+        <li><strong>Apple</strong> — App Store purchases and subscription management.</li>
+        <li><strong>Google Firebase</strong> (Authentication, Cloud Functions, Firestore, Analytics, Crashlytics, App Check).</li>
+        <li><strong>Google Gemini API</strong> — generates the AI report from the submitted sample.</li>
+        <li><strong>RevenueCat</strong> — subscription/purchase validation.</li>
+      </ul>
+
+      <h2>Data retention</h2>
+      <p>
+        The condensed sample sent for analysis is processed transiently to produce the report.
+        Generated reports are retained in your account record until you delete the app data or
+        request deletion. Aggregate analytics/crash data are retained per the providers'
+        standard policies.
+      </p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>You can delete saved reports in the app.</li>
+        <li>You can request deletion of your account data by contacting us.</li>
+        <li>You can manage or cancel subscriptions in <strong>Settings → Apple ID → Subscriptions</strong>.</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>
+        FlirtScore is not directed to children under 13 (or the minimum age in your region)
+        and we do not knowingly process their data.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions or deletion requests: <a href="mailto:onurseref61@icloud.com?subject=FlirtScore%20Privacy">onurseref61@icloud.com</a>
+      </p>
+    </div>
+
+    <footer>
+      <p><a href="https://onrseref.github.io/flirtscore-support/">Support</a> &nbsp;·&nbsp; <a href="https://onrseref.github.io/terms/">Terms of Service</a></p>
+      <p style="margin-top:8px;">© 2026 FlirtScore. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

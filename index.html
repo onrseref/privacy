@@ -68,14 +68,14 @@
     <header>
       <div class="logo">🔒</div>
       <h1>FlirtScore Privacy Policy</h1>
-      <p class="updated">Last updated: 4 July 2026</p>
+      <p class="updated">Last updated: 13 July 2026</p>
     </header>
 
     <div class="content">
       <p>
         FlirtScore ("the app", "we", "us") analyzes WhatsApp conversations you choose to
-        import and produces an AI relationship report. This policy explains what we process
-        and why.
+        import and produces an AI relationship report. This policy explains what we collect,
+        how we collect it, why we use it, and when data is shared with third-party AI services.
       </p>
 
       <h2>Summary</h2>
@@ -83,15 +83,15 @@
         <li>We do <strong>not</strong> require an account, your name, email, or phone number.</li>
         <li>We do <strong>not</strong> sell your data or use it for advertising.</li>
         <li>Chat content is processed to generate your report and is not used to identify you.</li>
+        <li><strong>We ask for your explicit consent in the app before any chat data is sent for AI analysis.</strong></li>
       </ul>
 
-      <h2>What we process</h2>
+      <h2>What data is collected</h2>
       <p>
         <strong>Chat content you import.</strong> When you run an analysis, your chat is
-        parsed on your device. A condensed sample of messages plus aggregate statistics is
-        sent to our secure backend and to our AI provider (Google Gemini) solely to generate
-        your report. The resulting report is stored in your account record so it can power the
-        app's features.
+        parsed on your device. A condensed sample of messages (up to 50 excerpts), participant
+        names, and aggregate statistics may be transmitted to generate your report. Your full
+        chat export file is <strong>not</strong> uploaded.
       </p>
       <p>
         <strong>Anonymous identifier.</strong> We use Firebase Anonymous Authentication to
@@ -105,12 +105,32 @@
       <p>
         <strong>Purchases.</strong> Subscriptions and optional consumable analysis packs are
         processed by Apple and managed via RevenueCat. We receive purchase status (active plan,
-        entitlement, and redeemed pack credits), not your payment details. We store your remaining
-        included and bonus analysis credits on our servers so quotas can be enforced fairly across
-        devices.
+        entitlement, and redeemed pack credits), not your payment details.
       </p>
 
-      <h2>Third-party processors</h2>
+      <h2>How data is collected</h2>
+      <ul>
+        <li><strong>On your device</strong> — you import or share a WhatsApp export; parsing happens locally first.</li>
+        <li><strong>With your permission</strong> — before the first AI analysis, the app shows a consent screen. Analysis does not proceed unless you tap <strong>I Agree</strong>.</li>
+        <li><strong>On our servers</strong> — after consent, a Firebase Cloud Function receives the condensed sample and calls our AI provider.</li>
+        <li><strong>From Apple / RevenueCat</strong> — subscription status only, not payment card details.</li>
+      </ul>
+
+      <h2>Why data is used</h2>
+      <ul>
+        <li>To generate your AI relationship analysis report.</li>
+        <li>To enforce subscription entitlements and analysis quotas.</li>
+        <li>To store your report history in your anonymous account record.</li>
+        <li>To improve app reliability through aggregate diagnostics.</li>
+      </ul>
+      <p>We do <strong>not</strong> use your chat content for advertising, profiling, or resale.</p>
+
+      <h2>Third-party AI services</h2>
+      <p>
+        Certain user-provided chat content is shared with <strong>Google Gemini</strong> (via
+        Google Firebase Cloud Functions) <strong>solely</strong> to generate AI-powered analysis
+        responses. We send only the minimum data required for the report.
+      </p>
       <ul>
         <li><strong>Apple</strong> — App Store purchases and subscription management.</li>
         <li><strong>Google Firebase</strong> (Authentication, Cloud Functions, Firestore, Analytics, Crashlytics, App Check).</li>
@@ -128,6 +148,7 @@
 
       <h2>Your choices</h2>
       <ul>
+        <li>You can decline AI data processing — analysis will not run without your consent.</li>
         <li>You can delete saved reports in the app.</li>
         <li>You can request deletion of your account data by contacting us.</li>
         <li>You can manage or cancel subscriptions in <strong>Settings → Apple ID → Subscriptions</strong>.</li>
